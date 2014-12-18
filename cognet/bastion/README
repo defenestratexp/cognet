@@ -1,0 +1,1 @@
+This is a script to create a user account on the bastion hosts and push the user's SSH public to those hosts.

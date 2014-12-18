@@ -10,5 +10,10 @@ params = {'target': domain, 'verbose': 'True'}
 r = requests.get(url, params=params)
 content = r.json()
 
+tokencounter = 0
+
 for user in content[domain]['users']:
     print user
+    tokencounter += 1
+    
+print tokencounter
